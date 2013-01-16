@@ -1,2 +1,8 @@
+@(days: String, hours: String, conventional: String)
 @main("Octoclock") {
+    <div class="clock-frame">
+        <span class="days">@days</span><br/>
+        <span class="hours">@hours</span><br/>
+        <span class="conventional">@conventional</span>
+    </div>
 }
