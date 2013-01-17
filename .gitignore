@@ -1,8 +1,14 @@
-logs
+bin/
+data/
+db/
+dist/
+logs/
+test-result/
+tmp/
+modules/
 project/project
 project/target
 target
-tmp
 .history
 dist
 /.idea
