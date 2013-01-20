@@ -8,7 +8,7 @@ import java.util.{TimeZone, GregorianCalendar}
 object Application extends Controller {
 
   def index = Action {
-    Redirect(routes.Application.time())
+    Ok(views.html.time())
   }
 
   def time = Action {
@@ -23,7 +23,7 @@ object Application extends Controller {
     fmt2.setCalendar(now)
     val conv1 = fmt1.format(now.getTime)
     val conv2 = fmt2.format(now.getTime)
-    Ok(views.html.time(days, hours, conv1, conv2))
+    Ok(views.html.snippet(days, hours, conv1, conv2))
   }
 
 }
