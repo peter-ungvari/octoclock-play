@@ -3,6 +3,7 @@
         function getTime() {
             $("div.clock-frame").load("/time", function() {
                 $("div.clock-frame").show();
+                document.title = "Octoclock - " + $(this).children(".hours").text() + ":" +  $(this).children(".days").text();
             });
         }
 
